@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bunnell Property Carousel</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f0f2f5;
+      }
+
+      .swiper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        position: relative;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      /* Navigation arrows fully inside images */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #1e3a8a; /* arrow color */
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8); /* circular background */
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Ensure arrows are fully inside the images */
+      .swiper-button-prev {
+        left: 15px;
+      }
+      .swiper-button-next {
+        right: 15px;
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      /* Pagination bullets */
+      .swiper-pagination-bullet {
+        background: #1e3a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0478.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0479.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0480.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0481.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0482.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0483.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0484.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0485.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0486.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0487.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0488.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0489.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0491.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0492.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0494.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0495.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0496.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0497.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0498.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0499.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0500.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0501.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0502.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0503.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0504.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0505.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0506.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0509.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0510.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0511.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0512.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/IMG-20251112-WA0513.jpg" />
+        </div>
+      </div>
+
+      <!-- Pagination and arrows -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: { delay: 5000 }, // slower auto scroll
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Click-to-enlarge
+      document.querySelectorAll(".swiper-slide img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const src = img.getAttribute("src");
+          const overlay = document.createElement("div");
+          overlay.style.position = "fixed";
+          overlay.style.top = 0;
+          overlay.style.left = 0;
+          overlay.style.width = "100%";
+          overlay.style.height = "100%";
+          overlay.style.backgroundColor = "rgba(0,0,0,0.8)";
+          overlay.style.display = "flex";
+          overlay.style.justifyContent = "center";
+          overlay.style.alignItems = "center";
+          overlay.style.cursor = "zoom-out";
+          overlay.innerHTML = `<img src="${src}" style="max-width:90%; max-height:90%;">`;
+          overlay.addEventListener("click", () => overlay.remove());
+          document.body.appendChild(overlay);
+        });
+      });
+    </script>
+  </body>
+</html>
